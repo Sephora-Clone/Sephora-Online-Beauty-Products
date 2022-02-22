@@ -5,18 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmetics,Beauty Products,Frag</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
     <header>
+        <!-- // Horizontal Navbar -->
         <div id="navbar">
 
+            <!-- // discont and offer -->
+            <div id="discont">
+                <div><p><a href="#"> Presidents’ Day Sale LAST DAY for beauty up to 50% off ▸</a> Free shipping on all orders with code <a href="#">FREESHIP ▸</a></p></div>
+            </div>
+
+            <!-- // home navbar -->
+            <div id="homebar">
+                <div ><a href="index.html" id="heading"><h1 >SEPHORA</h1></a></div>
+                <div id="inputDiv"><input type="text" placeholder="search" id="inputText">
+                <span id="searchIcon"><i class="fa fa-search" aria-hidden="true"></i> search</span></div>
+            </div>
+            <!-- // products details and types -->
+            <div id="productsTypes">
+               
+            </div>
         </div>
     </header>
     <Main>
-
+        
     </Main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
+<script>
+    document.querySelector("#inputText").addEventListener("click",()=>{
+        document.querySelector("#searchIcon").style.display="none";
+        document.querySelector("#inputText").style.backgroundColor="white"
+    })
+</script>

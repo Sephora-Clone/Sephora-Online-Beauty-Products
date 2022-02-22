@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;500&family=Roboto+Condensed:wght@700&display=swap');
+header{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid black; */
+}
+/* Golobly style */
+a{
+    text-decoration: none;
+}
+
+/* localy style */
+#navbar
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#discont{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(207,21,45);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#discont>div p{
+    font-size: large;
+    color: rgb(255,255,242)
+}
+#discont>div a
+{
+    
+    text-decoration: none;
+    color: rgb(255,255,242);
+    font-weight: bolder;
+}
+#discont>div a:hover{
+    border-bottom: 0.1rem solid white;
+}
+#homebar{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#heading{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    letter-spacing: 0.5rem;
+    
+}
+#inputDiv
+{
+    width: 30%;
+    position: relative;
+    background-color: rgb(246,246,248);
+}
+#inputDiv input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgb(246,246,248);
+    
+}
+#inputDiv span{
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    background-color: rgb(246,246,248);
+    display: block;
+    
+}
+#productsTypes{
+    width: 100%;
+    height: 25%;
+    background-color: black;
+}
