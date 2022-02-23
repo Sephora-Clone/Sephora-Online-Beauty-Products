@@ -82,3 +82,22 @@ a{
     height: 25%;
     background-color: black;
 }
+#productsTypes{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+.contain-perant {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contant{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 40vw;
+    height:30vh ;
+    color: black;
+}

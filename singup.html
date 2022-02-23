@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing_Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/singup.css">
+</head>
+
+<body>
+    <!-- sing Up Page -->
+    <div class="singUp">
+        <div id="upper_heading">
+            <p>Create an Account</p>
+            <i class="fa fa-close" id="cancel"></i>
+        </div>
+        <hr style="margin-top: 2%;">
+        <div id="middle_heading">
+            <img src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg" alt="img" id="logo">
+            <p>Join the Beauty Insider loyalty program. Earn points, redeem rewards, and more.</p>
+        </div>
+        <!--  Form  -->
+        <div id="formDiv">
+            <form action="" class="form">
+                <div class=" inpt name">
+
+                    <div class="nam first"><input required placeholder="" class="input-box" type="text"
+                            id="firstNameId"><span class="span" id="spanBox1" for="firstNameId">First name</span>
+                    </div>
+                    <div class="nam last"><input required placeholder="" class="input-box" type="text"
+                            id="lastNameId"><span class="span" id="spanBox2" for="lastNameId">Last name</span>
+                    </div>
+                </div>
+
+                <div class="inpt email"><input required placeholder="" class="input-box" type="text"
+                        id="emaioptiond"><span class="span" for="emaioptiond">Email</span>
+                </div>
+
+                <div class="inpt password"><input required placeholder="" class="input-box" type="text" id="passwordId">
+                    <span class="span" for="passwordId">Password(6 to 12 character)</span>
+                </div>
+
+                <div class="inpt phone"><input required placeholder="" class="input-box" type="text" id="phoneId"><span
+                        class="span" for="phoneId">Phone number</span>
+                </div>
+
+                <div class="birthDateDiv">
+                    <img src="https://www.sephora.com/img/ufe/icons/birthday.svg " id="birthday" alt="img">
+                    <p>Enter your birthdate to receive a free gift every year.</p>
+                </div>
+
+                <!-- month and Days  -->
+                <div class=" inpt monthDaysDiv">
+                    <!-- Months -->
+                    <div class=" select monthDiv">
+                        <select class="select-box" id="monthsName" required>
+                            <option value="">
+                                <p></p>
+                            </option>
+                            <option>
+                                <p>Jan</p>
+                            </option>
+                            <option>
+                                <p>Fab</p>
+                            </option>
+                            <option>
+                                <p>march</p>
+                            </option>
+                            <option>
+                                <p>apr</p>
+                            </option>
+                            <option>
+                                <p>may</p>
+                            </option>
+                            <option>
+                                <p>jun</p>
+                            </option>
+                            <option>
+                                <p>jselecty</p>
+                            </option>
+                            <option>
+                                <p>aug</p>
+                            </option>
+                            <option>
+                                <p>sep</p>
+                            </option>
+                            <option>
+                                <p>oct</p>
+                            </option>
+                            <option>
+                                <p>nav</p>
+                            </option>
+                            <option>
+                                <p>dic</p>
+                            </option>
+                        </select>
+                        <span class="span opt-span" for="month">Months</span>
+                    </div>
+
+                    <!--  Days -->
+                    <div class="select daysDiv">
+
+                        <select class="select-box" name="Days" id="DaysId" required>
+                            <option value=""></option>
+                        </select>
+                        <span class="span opt-span" for="DaysId">Days</span>
+                    </div>
+                </div>
+                <div>
+                    <hr id="hr" style="width: 90%;">
+                </div>
+                <div class="inpt zipcode">
+                    <input required placeholder="" class="input-box" type="text" name="" id="zipId"> <span class="span"
+                        for="zip">ZIP Code (to hear about store events near you)</span>
+                </div>
+                <hr>
+                <div class="inpt submit"><input class="input-box" type="submit" value="Join now" id="submitId"></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var DaysId = document.querySelector("#DaysId");
+    for (var i = 1; i <= 31; i++) {
+        var option = document.createElement("option");
+        option.innerHTML = i;
+        DaysId.append(option);
+    }
+</script>

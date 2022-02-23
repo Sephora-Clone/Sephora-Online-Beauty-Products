@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* overflow: hidden; */
+}
+
+/* singUp Div */
+.singUp{
+    width: 35vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+/* Upper heading and x(cancel) */
+#upper_heading{
+    margin-top: 2%;
+    width: 100%;
+    height: 10%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#upper_heading p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-left:8rem;
+    
+}
+#upper_heading i{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-left: 5rem;
+}
+
+/* Middel  logo  and decription*/
+#middle_heading{
+    margin-top: 5%;
+    margin-left: 2%;
+    padding: 2%;
+    width: 85%;
+    height: 10%;
+}
+#middle_heading>#logo{
+    width: 50%;
+}
+#middle_heading p {
+    margin-top: 1%;
+    font-size: 1rem;
+}
+
+
+/* Form  */
+#formDiv{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.form>div
+{
+    margin-left: 2%;
+    position: relative;
+}
+
+/* full name  */
+.name{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nam{
+    width: 47%;
+    position: relative;
+    
+}
+#spanBox1,#spanBox2{
+    left: 0.5rem;
+    top: 0.5rem;  
+}
+
+
+
+/* full name and select tag  */
+#firstNameId,#lastNameId{
+    padding: 6%;
+}
+
+/* Input class in all div */
+.inpt{
+    width:90%;
+    height: 100% ;
+    padding:2%;
+    position: relative;
+}
+.email{
+    margin-top: 2%;
+}
+
+/* input and select tag  */
+input,select{
+    width: 100%;
+    padding:3.5%;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.26);
+    
+}
+
+/* span */
+.span{
+    position: absolute;
+    top:1.5rem;
+    left: 1rem;
+    transition: 0.5s;
+    pointer-events: none;
+    color: rgba(10, 10, 10, 0.472);
+}
+
+ /* input:focus  */
+
+.input-box:focus ~ .span,
+.input-box:not(:placeholder-shown).input-box:not(:focus)~.span
+{
+   transform: translateX(-0rem) translateY(-0.9rem);
+}
+.input-box:focus{
+    border: 0.5px solid black;
+}
+
+
+/* birthday logo and decription  */
+.birthDateDiv
+{
+   
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+.birthDateDiv p
+{
+    margin-left: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+#birthday{
+    width: 5%;
+}
+
+/* Manths and Day  */
+.monthDaysDiv{
+    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.select{
+    width: 47%;
+    position: relative;
+  
+}
+#monthsName,#DaysId{
+    padding: 6%;
+    background-color: white;
+}
+.select span{
+    left: 0.5rem;
+    top: 0.5rem;
+    transform: 0.5s;
+}
+.select-box:focus~.opt-span,
+.select-box:not(:invalid).select-box:not(:focus)~.opt-span
+{
+    transform: translateX(-0rem) translateY(-0.5rem);
+}
+.select-box:focus{
+    border: 0.5px solid black;
+}
+
+#hr{
+    margin-left: 0.5rem;
+}
+hr{
+    color: rgba(42, 41, 41, 0.137);
+}
+
+/* Submit Button */
+#submitId
+{
+    font-size: 0.9rem;
+    font-weight: bolder;
+    width: 50%;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+}
+
