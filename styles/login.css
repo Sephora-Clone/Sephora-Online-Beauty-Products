@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+hr{
+    color: rgba(0, 0, 0, 0.322);
+    height: 0.1px;
+}
+.login
+{
+    width: 35vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.login>div{
+    margin-top: 5%;
+}
+.heading
+{   width: 80%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin-left: 5%;
+
+}
+#cancel{
+    font-size: 2rem;
+}
+
+.loginForm{
+    width: 90%;
+    height: 50%;
+    
+}
+#login-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.loginForm div{
+    margin-top: 2%;
+}
+.inpt{
+    width: 90%;
+    height: 10%;
+    position: relative;
+}
+.inpt input{
+    width: 100%;
+    padding: 3%;
+    outline: none;
+
+}
+.inpt span{
+    position: absolute;
+    top: 1rem;
+    left: 0.1rem;
+    transition: 1s;
+    color: rgba(0, 0, 0, 0.493);
+}
+.input-box:focus~.span,
+.input-box:not(:placeholder-shown).input-box:not(:focus)~.span
+{
+    transform: translateY(-1.0rem);
+}
+.input-box:focus{
+    border: 1px solid black;
+}
+.check
+{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.chak{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#check-box
+{
+    width: 15%;
+    
+}
+#login-submitId{
+    width: 50%;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bolder;
+    transition: 0.5s;
+    margin-top: 7%;
+    padding: 4%;
+}
+#login-submitId:hover{
+    background-color: rgba(0, 0, 0, 0.534);
+}
+.newAc
+{
+    width: 90%;
+    height: 30%;
+    color: black;
+    font-weight: bolder;
+    margin-left: 5%;
+   
+    
+}
+.newAc p{
+    font-size: 1.1rem;
+}
+.newAc>button{
+    margin-top: 2%;
+    width: 45%;
+    height: 90%;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    transition: 0.5s;
+
+}
+.newAc>button:hover{
+    border: 2px solid rgba(0, 0, 0, 0.431);
+}
+#termC
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    color: rgba(0, 0, 0, 0.664);
+    
+}
+#termC a{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+#termC a:hover{
+    border-bottom: 0.5px solid blue;
+}
