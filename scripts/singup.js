@@ -1,7 +1,6 @@
 
-let Submit = async ()=>
+let singUPData = async ()=>
 {
-    
     try {
         
         let firstName = document.getElementById("firstNameId").value;
@@ -11,21 +10,22 @@ let Submit = async ()=>
         let phone = document.getElementById("phoneId").value;
         let month = document.getElementById("monthsName").value;
         let day = document.getElementById("DaysId").value;
+        let birth = `${month}/${day}`
         let zipCode = document.getElementById("zipId").value;
         let fullName = firstName+" "+lastName;
 
-        let user_data = {
+        let register_data = {
             name:fullName,
-            email:emailId,
+            email:birth,
             password:password,
             username:emailId,
             mobile:phone,
             description:zipCode
         }
-        user_data = JSON.stringify(user_data);
+        register_data = JSON.stringify(register_data);
         let requst = await fetch("https://masai-api-mocker.herokuapp.com/auth/register",{
             method:"POST",
-            body:user_data,
+            body:register_data,
             headers:{
                 "Content-Type": "application/json",
             },
@@ -41,6 +41,7 @@ let Submit = async ()=>
 }
 document.querySelector("form").addEventListener("submit",(event)=>{
     event.preventDefault()
-    Submit()
+    singUPData()
     
 })
+
