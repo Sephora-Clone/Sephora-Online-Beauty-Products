@@ -26,7 +26,6 @@ let loginData = async ()=>
     }
     
 }
-
 let getdata = async (username,token) =>{
     try {
         let res = await fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`,{
@@ -43,7 +42,6 @@ let getdata = async (username,token) =>{
         alert("Data not matched!!!")
     }
 }
-
 document.querySelector("form").addEventListener("submit",(event)=>{
     event.preventDefault();
     loginData();
