@@ -37,7 +37,9 @@ let getdata = async (username,token) =>{
         })
         let data = await res.json();
         console.log("data",data);
+        localStorage.setItem("profile",JSON.stringify(data))
         alert("Login successful");
+        window.location.href="aftar_login.html"
     } catch (error) {
         alert("Data not matched!!!")
     }

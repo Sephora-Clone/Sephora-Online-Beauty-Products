@@ -1,24 +1,35 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     border-radius: 5px;
     /* overflow: hidden; */
-}
+
 
 /* singUp Div */
+.singup-div{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: 12;
+    display: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
 .singUp{
     width: 35vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
-     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+     
+     
 }
 
 /* Upper heading and x(cancel) */
 #upper_heading{
-    margin-top: 2%;
+    margin-top: 2%; 
     width: 100%;
     height: 10%; 
     display: flex;
@@ -40,7 +51,7 @@
 
 /* Middel  logo  and decription*/
 #middle_heading{
-    margin-top: 5%;
+    /* margin-top: 5%; */
     margin-left: 2%;
     padding: 2%;
     width: 85%;
@@ -62,7 +73,7 @@
     display: flex;
     flex-direction: column;
 }
-.form>div
+form>div
 {
     margin-left: 2%;
     position: relative;
@@ -76,12 +87,11 @@
 }
 .nam{
     width: 47%;
-    position: relative;
-    
+    position: relative; 
 }
 #spanBox1,#spanBox2{
     left: 0.5rem;
-    top: 0.5rem;  
+    top: 0.8rem;  
 }
 
 
@@ -92,9 +102,9 @@
 }
 
 /* Input class in all div */
-.inpt{
+.inptSingup{
     width:90%;
-    height: 100% ;
+    height: 13% ;
     padding:2%;
     position: relative;
 }
@@ -103,7 +113,7 @@
 }
 
 /* input and select tag  */
-input,select{
+.singup-div input, .singup-div select{
     width: 100%;
     padding:3.5%;
     outline: none;

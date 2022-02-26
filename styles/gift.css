@@ -1,0 +1,256 @@
+#container0{
+    height: 4000px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+#navbar0{
+   height: 200px;
+   width: 100%;
+}
+#maincontent{
+    width: 100%;
+    height: 3800px;
+    display: flex;
+}
+#leftcolumn{
+    width: 14%;
+    height: 3800px;
+    margin-left: 8.5% ;
+    display: block; 
+}
+.options:hover{
+  
+  text-decoration: underline;
+}
+.options{
+    height: 1%;
+    width: 100%;
+    /* border: 1px solid black; */
+    color: black;
+}
+#container0 a {
+  /* background-color: red; */
+  color:black;
+  /* padding: 1em 1.5em; */
+  text-decoration: none;
+  text-transform: uppercase;
+  }
+  #container0 h1{
+ font-weight: 1000;   
+}
+
+#container0 a:hover {
+text-decoration: underline;
+}
+#container0 a:link {
+text-decoration: none;
+}
+
+#selectField{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.7);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#selectField img{
+    width: 12px;
+}
+#list{
+    width: 100%;
+    background:rgba(255,255,255,0.7);
+    border-radius:6px ;
+    overflow: hidden;
+}
+.option2{
+    width: 100%;
+    padding: 15px 0 15px 70px;
+    cursor: pointer;
+    box-sizing: border-box;
+    list-style: none;
+    position: relative;
+}
+#check{
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+   
+}
+.hide{
+    visibility: hidden;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+
+
+
+
+#rightSide{
+    width: 70%;
+    height: 2800px;
+    border: 1px solid black;
+    }
+
+    #openspace{
+        width: 100%;
+        height: 2.9%;
+        /* border: 1px solid black; */
+    }
+    #cards{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-column-gap: 7px;
+            grid-row-gap: 10px;
+            /* background-color: lightgray; */
+            padding: 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    }
+    #cards>div{
+        background-color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 13px;
+            border-radius: 2%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #results{
+        width: 100%;
+        height: 2%;
+        border: 1px solid black;
+        color: gray;
+        padding-top: 3px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #products{
+        width: 100%;
+        height: 80%;
+        /* border: 1px solid red; */
+
+    }
+
+    #containerwa{
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        
+    }
+   
+    #container0  img{
+        width: 30%;
+    }
+    
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      user-select: none;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav{
+      /* position: absolute; */
+      /* top: 20%; */
+      /* left: 50%; */
+      /* transform: translate(-50%, -50%); */
+      background: white;
+      width: 200px;
+      line-height: 40px;
+      padding: px 25px;
+      border-radius: 5px;
+    }
+    nav label{
+      color: black;
+      font-size: 22px;
+      font-weight: 500;
+      display: block;
+      cursor: pointer;
+    }
+    .button1 span{
+      float: right;
+      line-height: 40px;
+      transition: 0.5s;
+    }
+    .button1 span.rotate{
+      transform: rotate(-180deg);
+    }
+    nav ul{
+      /* position: absolute; */
+      background: white;
+      list-style: none;
+      top: 75px;
+      left: 0;
+      width: 100%;
+      border-radius: 5px;
+      display: none;
+    }
+    [id^=btn]:checked + ul{
+      display: block;
+    }
+    nav .menu-filter:before{
+      position: absolute;
+      content: '';
+      height: 20px;
+      width: 20px;
+      background: #1b1b1b;
+      right: 20px;
+      top: -10px;
+      transform: rotate(45deg);
+      z-index: -1;
+    }
+    nav ul li{
+      line-height: 40px;
+      padding: 8px 20px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    nav ul li label{
+      font-size: 18px;
+    }
+    nav ul li a{
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      display: block;
+    }
+    nav ul li a:hover,
+    nav ul li label:hover{
+      color: black;
+      text-decoration: underline;
+    }
+    nav ul ul{
+      position: static;
+    }
+    nav ul ul li{
+      line-height: 30px;
+      padding-left: 30px;
+      border-bottom: none;
+    }
+    nav ul ul li a{
+      color: black;
+      font-size: 17px;
+    }
+    nav ul li span{
+      font-size: 20px;
+      float: right;
+      margin-top: 10px;
+      padding: 0 10px;
+      transition: 0.5s;
+    }
+    nav ul li span.rotate{
+      transform: rotate(-180deg);
+    }
+    #container0 input{
+        display: none;
+      }
+    #dropdownopt{
+     width: 100%;
+     height: 30%;
+     /* border: 1px solid red; */
+    }

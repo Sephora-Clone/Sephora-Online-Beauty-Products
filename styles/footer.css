@@ -1,0 +1,146 @@
+footer hr{
+    margin-bottom: 5%;
+}
+#top_line {
+    width: 98%;
+    padding: 1%;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+}
+#footer {
+    width: 100%;
+    background-color: black;
+}
+#top_footer {
+    width: 93%;
+    height: 120px;
+    display: flex;
+    margin: auto;
+
+    border-bottom: 1px solid grey;
+    /* background-color: black; */
+}
+footer img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10%;
+    /* margin-left: 2%; */
+    background-color: white;
+    border: 1px solid white;
+}
+.common {
+    margin-top: 5%;
+    width: 13%;
+    display: flex;
+    margin: auto;
+    margin-left: 0px;
+    /* border: 1px solid white; */
+}
+.unique {
+    width: 28%;
+    margin: auto;
+    display: inline-flex;
+    margin-left: 0px;
+    /* border: 1px solid white; */
+}
+.option {
+    margin: 0px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+}
+footer p {
+    margin-top: 2%;
+    color: white;
+    font-size: small;
+    line-height: 1.5rem;
+    /* margin: 0px;
+    margin-left: 4px;
+    margin-bottom: 2px; */
+} 
+footer p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#main_footer {
+    width: 93%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+footer h4,footer h1 {
+    color: white;
+}
+#common_box {
+    width: 15%;
+    /* margin: auto; */
+    margin-left: 0px;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+#unique_box {
+    width: 31%;
+    /* border: 1px solid white; */
+}
+.languages{
+    display: flex;
+    margin-bottom: 3%;
+}
+.input_box {
+    padding: 3.8%;
+    padding-right: 18%;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-bottom: 5%;
+    
+}
+.signup {
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-left: 3%;
+}
+.signup:hover {
+    border: 2px solid grey; 
+    color: grey;
+}
+
+#unique_box > h4 {
+    margin-top: 70%;
+}
+#bottom_footer {
+    width: 93%;
+    height: 150px;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    /* border: 1px solid white; */
+}
+.bottom_left {
+    /* border: 1px solid white; */
+    width: 55%;
+
+}
+.bottom_right {
+    /* border: 1px solid white; */
+    width: 45%;
+}
+#links > a {
+    color: white;
+    margin-right: 1%;
+}
+.img_tag {
+    margin-top: 3%;
+    margin-left: 48.1%;
+    
+}
+.img_tag > img:hover {
+    background-color: grey;
+    border: black;
+}

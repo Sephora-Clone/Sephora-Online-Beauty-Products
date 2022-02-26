@@ -33,6 +33,7 @@ let singUPData = async ()=>
 
         let collect = await requst.json();
         alert(collect.message);
+        window.location.href="login.html"
     
     }
     catch (error) {
