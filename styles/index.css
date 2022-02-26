@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *{
     padding: 0;
     margin: 0;
@@ -73,4 +74,66 @@ body{
     width: 100vw;
     height: 100vh;
 >>>>>>> c1c1aa04a34d28329d776e8157ce9a243a083295
+=======
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* border: 1px solid red; */
+    width: 100vw;
+    height: 100vh;
+}
+#main-pic img{
+    width: 85%;
+    margin: 0 7% 2%;
+    cursor: pointer;
+}
+.headings {
+    display: flex;
+}
+.headings>p {
+    font-size: 35px;
+    margin-left: 40%;
+}
+.headings>a {
+    color: rgb(2, 92, 177);
+    margin-left: 25%;
+    margin-top: 1%;
+}
+.cards {
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-around;
+}
+.item {
+    width: 15%;
+}
+.item>a {
+    margin: 5px 0;
+}
+#sub-pics {
+    margin: 5% 12%;
+    display: flex;
+}
+#sub-pics img {
+    margin-right: 2%;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 7%;
+    margin: 2% 15%;
+}
+#container>div {
+    cursor: pointer;
+}
+#last-pics {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 10%;
+    cursor: pointer;
+>>>>>>> 1314eb4b98426e1645bc0cfe7a74c03d43f75d99
 }
