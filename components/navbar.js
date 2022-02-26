@@ -14,7 +14,7 @@ function navbar()
         <!-- // home navbar -->
         <div id="homebar">
             <div><a href="index.html" id="heading">
-                    <h1>SEPHORA</h1>
+                    <h1 id="h">SEPHORA</h1>
                 </a></div>
             <div id="inputDiv">
                 <input type="text" placeholder="search" id="inputText">
@@ -125,7 +125,7 @@ function navbar()
                     <div class="icon">
                         <img src="https://www.sephora.com/img/ufe/icons/me32.svg" alt="">
                     </div>
-                    <div>Sign In</div>
+                    <div id="userName">Sign In</div>
                 </div>
                 <div class="dropdown1-content">
                     <div id="account">
@@ -245,7 +245,7 @@ function navbar()
                 </div>
                 <!--  Form  -->
                 <div id="formDiv">
-                    <form >
+                    <form id="singup_form">
                         <div class=" inptSingup name">
 
                             <div class="nam first"><input required placeholder="" class="input-box" type="text"
