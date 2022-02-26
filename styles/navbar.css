@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;500&family=Roboto+Condensed:wght@700&display=swap');
 header{
     width: 100%;
@@ -368,4 +369,295 @@ a{
 }
 .settings div {
     margin-left: 3%;
+=======
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;500&family=Roboto+Condensed:wght@700&display=swap');
+header{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid black; */
+}
+/* Golobly style */
+a{
+    text-decoration: none;
+}
+
+/* localy style */
+#navbar
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+#discont{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(207,21,45);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#discont>div p{
+    font-size: large;
+    color: rgb(255,255,242)
+}
+#discont>div a
+{
+    
+    text-decoration: none;
+    color: rgb(255,255,242);
+    font-weight: bolder;
+}
+#discont>div a:hover{
+    border-bottom: 0.1rem solid white;
+}
+#homebar{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#heading{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    letter-spacing: 0.5rem;
+    
+}
+#inputDiv
+{
+    width: 30%;
+    position: relative;
+    background-color: rgb(246,246,248);
+}
+#inputDiv input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgb(246,246,248);
+    
+}
+#inputDiv span{
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    background-color: rgb(246,246,248);
+    display: block;
+    
+}
+#productsTypes{
+    width: 100%;
+    height: 25%;
+    background-color: black;
+}
+#stores:hover .dropdown-content {
+    display: block;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+#stores>.menu img {
+    padding-top: 6px;
+}
+.icon+div {
+    padding: 4px;
+}
+#icons {
+    width: 16%;
+    display: flex;
+    justify-content: space-around;
+}
+#icons img {
+    width: 35px;
+}
+#icons div:hover {
+    cursor: pointer;
+}
+                            /* stores dropdown */
+.dropdown-content {                     
+    display: none;
+    width: 24%;
+    position: absolute;
+    background-color: #f1f1f1;
+    margin-left: -5%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#choose {
+    background-color: white;
+    width: 100%;
+    padding: 7% 0;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+}
+#choose button {
+    color: white;
+    background-color: black;
+    width: 43%;
+    padding: 4% 0;
+    font-size: 10px;
+    border-radius: 17px;
+    border: 0;
+}
+#find {
+    background-color: white;
+    padding: 6%;
+    display: flex;
+}
+#find img {
+    width: 25px;
+}
+#find h4 {
+    margin: 2%;
+}
+#happening {
+    width: 100%;
+    margin-top: 7px;
+    padding: 6% 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+#happening h4 {
+    margin: 2%;
+}
+#happening a {
+    font-size: 11px;
+    margin: 2.5% 0 2% 8%;
+    color: rgb(1, 135, 153);
+}
+.service-event-new {
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+.service-event-new img {
+    width: 18%;
+    height: 50px;
+    margin: 3%;
+}
+.service-event-new img+div {
+    margin-left: 3%;
+    font-size: 14px;
+}
+.service-event-new img+div>div {
+    margin: 2% 0;
+}
+.service-event-new img+div>div:nth-of-type(2) {
+    font-size: 12px;
+    color: grey;
+}
+                        /* community dropdown */
+#community:hover .dropdown-content {
+    display: block;
+}
+#profile {
+    background-color: white;
+    padding: 5%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+#profile img {
+    width: 25px;
+    height: 25px;
+}
+#featured {
+    background-color: white;
+    margin-top: 2%;
+    padding: 4%;
+}
+#featured p {
+    padding: 3% 2%;
+}
+                /* signin dropdown */
+#signin:hover .dropdown-content {
+    display: block;
+}
+#account {
+    background-color: white;
+}
+#login {
+    display: flex;
+}
+#login>div {
+    margin-left: 3%;
+}
+#account img {
+    width: 40px;
+    height: 40px;
+    margin: 2% 0 2% 2%;
+}
+#account h4 {
+    padding-top: 2%;
+}
+#account p {
+    font-size: 12px;
+    margin-top: 2%;
+}
+#buttons {
+    padding: 6% 3%;
+    display: flex;
+    justify-content: space-around;
+}
+#buttons>button:nth-of-type(1) {
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    padding: 3% 15%;
+}
+#buttons>button:nth-of-type(2) {
+    background-color: white;
+    border: 0;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 2.75% 6%;
+}
+#insider {
+    background-color: white;
+    margin: 1% 0;
+    padding: 4% 0;
+    display: flex;
+    justify-content: space-between;
+}
+#insider>div {
+    margin-left: 2%;
+    font-size: 14px;
+}
+.grey {
+    color: grey;
+    margin-top: 1%;
+    font-size: 13px;
+}
+#insider img {
+    width: 60px;
+    margin-right: 2%;
+}
+#rewards {
+    background-color: white;
+    margin-bottom: 2.5%;
+    padding: 4% 2%;
+    font-size: 14px;
+}
+.settings {
+    background-color: white;
+    font-size: 14px;
+    padding: 4% 2%;
+    display: flex;
+}
+.settings img {
+    margin: 2% 0 2% 2%;
+}
+.settings div {
+    margin-left: 3%;
+>>>>>>> c1c1aa04a34d28329d776e8157ce9a243a083295
 }
