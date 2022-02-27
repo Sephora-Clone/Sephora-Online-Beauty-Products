@@ -9,7 +9,7 @@ let comonfunctionForApi = async(url)=>{
     }
 }
 
-let appendData = (data,perent)=>{
+let appendData = (data,perent,arr)=>{
     console.log(data,perent)
     data.forEach(element => {
         let mainBox = document.createElement("div");
@@ -28,6 +28,11 @@ let appendData = (data,perent)=>{
 
         let productbtn = document.createElement("button");
         productbtn.innerHTML = "Outlook";
+
+        productbtn.addEventListener("click",()=>{
+            arr.push(elem)
+            localStorage.setItem("items",JSON.stringify(arr))
+        })
 
         mainBox.append(productImag,productName,productCategry,productPrice,productbtn);
         perent.append(mainBox);

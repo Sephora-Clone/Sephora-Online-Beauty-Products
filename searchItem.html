@@ -32,6 +32,7 @@
     document.querySelector("header").innerHTML=navbar();
     let serch = localStorage.getItem("userSearch")||"Bronzer"
     let data = await comonfunctionForApi(`https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${serch}`)
+    let arr = JSON.parse(localStorage.getItem("items"))||[];
     let perent = document.getElementById("products-items");
-    appendData(data,perent);
+    appendData(data,perent,arr);
 </script>
