@@ -88,49 +88,23 @@
     </footer>
 </body>
 </html>
-<!-- <script src="scripts/main.js"></script> -->
-<!-- <script src="scripts/index.js"></script> -->
-<!-- <script src="scripts/login.js"></script> -->
-<!-- <script src="scripts/singup.js"></script> -->
+
 <script type="module">
     import {navbar,fotter} from "../components/navbar.js";
     document.querySelector("header").innerHTML=navbar();
     document.querySelector("footer").innerHTML=fotter();
-    var DaysId = document.querySelector("#DaysId");
-    for (var i = 1; i <= 31; i++) {
-        var option = document.createElement("option");
-        option.innerHTML = i;
-        DaysId.append(option);
-    }
+    
+ 
 
-    var lgn = document.querySelector("#login_Button")
-    lgn.addEventListener("click",()=>{
-        var div  = document.querySelector(".login-div");
-        div.style.display="block";
-    })
-
-    var lgn = document.querySelector("#Register_button")
-    lgn.addEventListener("click",()=>{
-        var div = document.querySelector(".singup-div");
-        div.style.display="block"
-    })
-    document.querySelector("body").addEventListener("dblclick",()=>{
-        var div1  = document.querySelector(".login-div");
-        div1.style.display="none";
-        var div2 = document.querySelector(".singup-div");
-        div2.style.display="none"
-    })
-    document.querySelector("#cancel").addEventListener("click",()=>{
-
-        var div1  = document.querySelector(".login-div");
-        div1.style.display="none";
-        var div2 = document.querySelector(".singup-div");
-        div2.style.display="none"
-    })
 
     document.querySelector("#inputText").addEventListener("click",()=>{
         document.querySelector("#searchIcon").style.display="none";
         document.querySelector("#inputText").style.backgroundColor="white"
+    })
+
+    document.querySelector("Main").addEventListener("click",()=>{
+        document.querySelector("#searchIcon").style.display="block";
+
     })
 
 
@@ -138,5 +112,17 @@
 
 var userinfo = JSON.parse(localStorage.getItem("UserInfo"))||[];
 document.querySelector("#userName").innerHTML=userinfo.name;
+
+// =============================================Debouncing ===========================================================
+
+document.getElementById("inputText").addEventListener("keypress",(ele)=>{
+    console.log(ele)
+    if(ele.key == "Enter")
+    {
+        var userSearch = document.getElementById("inputText").value;
+        localStorage.setItem("userSearch",userSearch);
+        window.location.href = "searchItem.html";
+    }
+})
 
 </script>

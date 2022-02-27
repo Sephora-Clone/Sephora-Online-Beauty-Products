@@ -13,7 +13,7 @@ function navbar()
 
         <!-- // home navbar -->
         <div id="homebar">
-            <div><a href="index.html" id="heading">
+            <div><a href="newIndex.html" id="heading">
                     <h1 id="h">SEPHORA</h1>
                 </a></div>
             <div id="inputDiv">

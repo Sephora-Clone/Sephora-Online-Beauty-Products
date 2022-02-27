@@ -1,0 +1,50 @@
+#search-items{
+    width: 100vw;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+}
+#products-items{
+    
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-column-gap:2%;
+    grid-row-gap:0.5%;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+    
+}
+#products-items > div{
+    /* border: 1px solid red; */
+    text-align: center;
+    /* background-color: whitesmoke; */
+    
+}
+
+#products-items > div img{
+    object-fit: contain;
+    width: 100%;
+    margin: auto;
+}
+#products-items > div:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+#products-items > div img,#products-items > div p, #products-items > div h3
+{
+    margin-top: 2%;
+}
+#products-items button{
+    width: 100%;
+    padding: 5%;
+    visibility: hidden;
+    font-weight: bolder;
+    background-color: rgba(86, 86, 116, 0.568);
+    transform: 1S;
+}
+#products-items>div:hover button
+{
+    visibility: visible;
+    background-color: rgba(90, 151, 221, 0.329);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/singup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <header></header>
+    <Main>
+        <div id="search-items">
+            <div id="products-items"> 
+            </div>
+        </div> 
+    </Main>
+    <footer></footer>
+</body>
+</html>
+<script type="module">
+    import {navbar,fotter} from "../components/navbar.js";
+    import {comonfunctionForApi,appendData} from "../scripts/apifetch.js"
+    document.querySelector("header").innerHTML=navbar();
+    let serch = localStorage.getItem("userSearch")||"Bronzer"
+    let data = await comonfunctionForApi(`https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${serch}`)
+    let perent = document.getElementById("products-items");
+    appendData(data,perent);
+</script>
