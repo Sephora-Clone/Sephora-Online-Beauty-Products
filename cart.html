@@ -190,6 +190,7 @@
         })
         div.append(img, brand, name, price, button);
         document.getElementById("container").append(div);
+        localStorage.setItem("total",total)
     })
 
     document.querySelector("h2").innerText = "Total:"+Math.round(total*0.7)+"$ (after 30% discount)";
@@ -197,4 +198,9 @@
     document.querySelector("#total").innerText = `Merchandise Subtotal: ${total}$`;
     document.querySelector("#ship").innerText = `Merchandise Subtotal: Free`;
 
+
+document.querySelector('#po').addEventListener("click",()=>
+{
+    window.location.href="checkout.html"
+})
 </script>

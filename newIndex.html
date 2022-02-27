@@ -91,10 +91,10 @@
 
 <script type="module">
     import {navbar,fotter} from "../components/navbar.js";
+    // import {comonfunctionForApi,appendData} from"../scripts/apifetch.js"
     document.querySelector("header").innerHTML=navbar();
     document.querySelector("footer").innerHTML=fotter();
     
- 
 
 
     document.querySelector("#inputText").addEventListener("click",()=>{
@@ -116,7 +116,7 @@ document.querySelector("#userName").innerHTML=userinfo.name;
 // =============================================Debouncing ===========================================================
 
 document.getElementById("inputText").addEventListener("keypress",(ele)=>{
-    console.log(ele)
+    
     if(ele.key == "Enter")
     {
         var userSearch = document.getElementById("inputText").value;

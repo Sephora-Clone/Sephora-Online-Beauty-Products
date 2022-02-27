@@ -71,4 +71,17 @@ document.getElementById("count").innerHTML=arr.length;
 var userinfo = JSON.parse(localStorage.getItem("UserInfo"))||[];
 document.querySelector("#userName").innerHTML=userinfo.name;
 
+
+// =============================================Debouncing ===========================================================
+
+document.getElementById("inputText").addEventListener("keypress",(ele)=>{
+    
+    if(ele.key == "Enter")
+    {
+        var userSearch = document.getElementById("inputText").value;
+        localStorage.setItem("userSearch",userSearch);
+        window.location.href = "searchItem.html";
+    }
+})
+
 </script>

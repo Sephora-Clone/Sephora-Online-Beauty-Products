@@ -370,15 +370,15 @@
     <div id="right">
         <div id="price">
         <p class="rightp">Merchandise Subtotal</p>
-        <p>$</p>
+        <p id="tl">$</p>
     </div>
     <div id="price">
         <p class="rightp">Shipping & Handling</p>
-        <p>$</p>
+        <p>$5.5</p>
         </div>
         <div id="price">
         <p class="rightp">Estimated Tax</p>
-        <p>$</p>
+        <p>$2.0</p>
         </div>
         <hr color="black">
         <h2>Estimated Total</h2>
@@ -434,4 +434,7 @@ function myFunction(event){
 
 };
 
+
+let total = localStorage.getItem("total");
+document.getElementById("tl").innerHTML=`${total}$`
 </script>
