@@ -234,6 +234,7 @@ let getdata = async (username,token) =>{
         console.log("data",data);
         alert("Login successful");
         localStorage.setItem("UserInfo",JSON.stringify(data));
+        window.location.href="newindex.html"
         
     } catch (error) {
         alert("Data not matched!!!")
@@ -242,7 +243,16 @@ let getdata = async (username,token) =>{
 document.querySelector("#login-form").addEventListener("submit",(event)=>{
     event.preventDefault();
     loginData();
-    window.location.href="newIndex.html"
-    
 })
+
+
+// =======================================================================cart ===========================
+
+document.getElementById("cart").addEventListener("click",()=>{
+    window.location.href="cart.html"
+})
+
+// ==========================================================================================================
+let arr = JSON.parse(localStorage.getItem("items"))||[];
+document.getElementById("count").innerHTML=arr.length;
 </script>

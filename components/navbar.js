@@ -188,7 +188,7 @@ function navbar()
                 <div><img src="https://icon-library.com/images/white-chat-icon/white-chat-icon-22.jpg" alt=""></div>
                 <div><img src="https://www.sephora.com/img/ufe/icons/heart.svg" alt=""></div>
                 <div><img src="https://media.istockphoto.com/vectors/shopping-bag-vector-id1134283202?s=612x612"
-                        alt=""></div>
+                        alt="" id="cart"><span id="count" style="position: relative;border-radius: 50%;right: 30px;text-align: center;color:red; top:-6px; font-size:20px">0</span></div>
             </div>
         </div>
         <!-- Login page Div -->

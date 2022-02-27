@@ -125,4 +125,14 @@ document.getElementById("inputText").addEventListener("keypress",(ele)=>{
     }
 })
 
+
+// =======================================================================cart ===========================
+
+document.getElementById("cart").addEventListener("click",()=>{
+    window.location.href="cart.html"
+})
+
+// ==========================================================================================================
+let arr = JSON.parse(localStorage.getItem("items"))||[];
+document.getElementById("count").innerHTML=arr.length;
 </script>

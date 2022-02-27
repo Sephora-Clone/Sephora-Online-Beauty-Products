@@ -35,4 +35,21 @@
     let arr = JSON.parse(localStorage.getItem("items"))||[];
     let perent = document.getElementById("products-items");
     appendData(data,perent,arr);
+
+
+    // ==================================================Name Change======================================================
+
+var userinfo = JSON.parse(localStorage.getItem("UserInfo"))||[];
+document.querySelector("#userName").innerHTML=userinfo.name;
+
+
+
+// =======================================================================cart ===========================
+
+document.getElementById("cart").addEventListener("click",()=>{
+    window.location.href="cart.html"
+})
+
+// ==========================================================================================================
+document.getElementById("count").innerHTML=arr.length;
 </script>

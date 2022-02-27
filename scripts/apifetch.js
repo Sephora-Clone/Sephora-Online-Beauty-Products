@@ -30,7 +30,7 @@ let appendData = (data,perent,arr)=>{
         productbtn.innerHTML = "Outlook";
 
         productbtn.addEventListener("click",()=>{
-            arr.push(elem)
+            arr.push(element)
             localStorage.setItem("items",JSON.stringify(arr))
         })
 

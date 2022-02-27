@@ -262,7 +262,7 @@ product_data = [
     },
 
 ];
-var arr =[];
+let arr = JSON.parse(localStorage.getItem("items"))||[];
 function ProductData(){
     product_data.map(function(elem) {
         div = document.createElement("div");

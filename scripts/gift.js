@@ -1,5 +1,5 @@
 
-let url = "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeshadow";
+let url = "https://makeup-api.herokuapp.com/api/v1/products.json?";
 
 const container = document.getElementById("container");
 
@@ -17,7 +17,7 @@ catch(err){
 }
 }
 getData();
-
+let arr = JSON.parse(localStorage.getItem("items"))||[];
 function appendProducts(data){
     console.log(data)
     data.forEach(function(el){
@@ -28,7 +28,14 @@ function appendProducts(data){
         title.innerText = el.name;
         let price = document.createElement("p");
         price.innerText = el.price_sign+(Math.floor(Math.random() * 100) + 1);
-        div.append(img,title,price);
+
+        var giftbtn = document.createElement("button");
+        giftbtn.innerHTML="Outlook"
+        giftbtn.addEventListener("click",()=>{
+            arr.push(el)
+            localStorage.setItem("items",JSON.stringify(arr))
+        })
+        div.append(img,title,price,giftbtn);
         containerwa.append(div);
     });
 }
