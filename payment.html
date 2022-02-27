@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment-page</title>
+    <link rel="icon" href=" https://i.pinimg.com/originals/4d/97/7c/4d977c5c4b53979eab62248638fdf813.jpg" >
+    <style>
+          *{
+            margin: 0px;
+            padding: 0%;
+        }
+        /* #head{
+            
+        } */
+        #navh{
+            letter-spacing: 10px;
+            text-align: center;
+            font-size: 35px;
+            /* font-weight: bold; */
+            text-transform: uppercase;
+            /* margin-top: 20px; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            width: 100%;
+            height: 60px;
+            padding-top: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        #container{
+            width: 100vw;
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: center;
+            margin-top: 10px;
+        }
+        #left{
+            width: 55%;
+            /* border: 1px solid teal; */
+            /* height: 500px; */
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        #right{
+            width: 25%;
+            border: 1px solid rgb(184, 183, 183);
+            height: 530px;
+            margin-left: 20PX;
+            margin-top: 5px;
+        }
+        #checkout{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            font-weight: lighter;
+        }
+        #left>h2{
+            font-size:24px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 5px;
+        }
+        #cont{
+            /* font-size:24px; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: black;
+            margin-left: 5px;
+            width: 50%;
+            /* display: inline-block; */
+        }
+        #anchor{
+            /* display:inline-block; */
+            text-align: end;
+            /* justify-content: end; */
+            width: 20%;
+        }
+        #content{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: black;
+            margin-left: 5px;
+            font-weight: bold;
+        
+        }
+        .rightp{
+            width: 80%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+            font-size: 14px;
+            padding-left: 5px;
+        }
+        .ofer{
+            font-size: 12px;
+            color: gray;
+            font-weight: bold;
+            font-family: serif;
+            margin-top: 10px;
+            margin-bottom: 12px;
+            padding-left: 5px;
+        }
+        #right>h2{
+            font-size: 19px;
+            /* color: gray; */
+            font-weight: bold;
+            font-family:sans-serif;
+            margin-top: 10px;
+            margin-bottom: 12px;
+            padding-left: 5px;
+        }
+        #promoview{
+            text-align: end;
+            padding-left: 5px;
+           
+            margin-top: 15px;
+            margin-bottom: 10px;
+            
+        }
+        #promoview>a{
+            text-align: end;
+            text-decoration:none;
+            font-size: 12px;
+            font-family: sans-serif;
+            padding-left: 5px;
+            
+        }
+        #promoview:hover>a{
+            text-decoration: underline;
+            font-size: 13px;
+            color: red;
+
+        }
+        #reward{
+            width: 90%;
+            height: 30px;
+           margin-left: 10px;
+           /* text-align: center;
+            */
+            /* padding: 10px; */
+            padding-left: 10px;
+            margin-bottom: 20px;
+
+           
+        }
+        #svgimg{
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            margin-right: 20px;
+            margin-left: 5px;
+        }
+        #svgtext{
+            width: 70%;
+            /* display: block; */
+            justify-content: end;
+            display: inline-block;
+        }
+        #star{
+            text-align: center;
+        }
+        #seedtl{
+            width: 90%;
+            margin-left: 10px;
+            color: black;
+            background-color: white;
+            border: 2px solid rgb(58, 51, 51);
+            height: 30px;
+            border-radius: 23px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #po{
+            width: 90%;
+            margin-left: 10px;
+            color: black;
+            background-color: rgb(226, 228, 229);
+            border: 0;
+            height: 40px;
+            border-radius: 23px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        #item{
+            width: 100%;
+        }
+        #footer{
+        
+            /* letter-spacing: 10px; */
+            text-align: center;
+            font-size: 10px;
+            font-weight: bold;
+            /* text-transform: uppercase; */
+            /* margin-top: 20px; */
+           background-color: black;
+           color: white;
+            width: 100%;
+            height: 80px;
+            padding-top: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 40px;
+            padding-top: 40px;
+            
+    
+        }
+        #footer{
+        
+        /* letter-spacing: 10px; */
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+        /* text-transform: uppercase; */
+        /* margin-top: 20px; */
+       background-color: black;
+       color: white;
+        width: 100%;
+        height: 80px;
+        padding-top: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 40px;
+        padding-top: 40px;
+        
+
+    }
+    #flex{
+        display: flex;
+        justify-content:space-between;
+        margin-top: 15px;
+        margin-bottom: 13px;
+        
+    }
+    #flex>a{
+        text-decoration: none;
+        color: rgb(80, 169, 241);
+    }
+    #price{
+        display: flex;
+        justify-content: space-around;
+        /* margin-left: 5px; */
+    }
+    #card{
+        display: flex;
+        /* display: block; */
+        justify-content: space-between;
+    }
+    #cardp{
+        width: 30%;
+        margin-top: 10px;
+        font-weight: bolder;
+        font-size: 19px;
+        font-family: sans-serif;
+        
+    }
+    #cardimg{
+        width: 65%;
+    }
+    #cardimg>img{
+        width: 65px;
+        height: 54px;
+        margin-left: 5px;
+    }
+    .inputcard{
+        width: 45%;
+            height: 40px;
+            margin-left: 1%;
+            /* margin-right: 1%; */
+            margin-bottom: 15px;
+            /* border-radius: 6px;
+            border: 0.3; */
+            padding-left: 5px;
+            text-align: justify;
+    }
+    .mm{
+        width: 150px;
+        height: 40px;
+        margin-bottom: 15px;
+        padding-left: 1%;
+        text-align: justify;
+        padding-left: 5px;
+
+    }
+    #checkbtn{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            margin-left: 1%;
+            background-color: black;
+            color: white;
+            border-radius: 23px;
+            border: 1px solid black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin-bottom: 30px;
+            margin-top: 40px;
+
+        }
+        #p{
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p id="navh">sephora</p>   
+    </header>
+    <div id="container">
+        <div id="left">
+            <h1 id="checkout" >Checkout</h1>
+            <hr color="black">
+            <div id="flex">
+                <h2>Shipping Address</h2>
+                <a  id="anchor" href="checkout.html">Edit</a>
+            </div>
+                <p id="cont">address</p>
+                <hr color="black">
+            <div id="flex">
+                <h2>Delivery & Gift Options</h2>
+                <a  id="anchor" href="checkout.html">Edit</a>
+            </div>
+                <p id="content">FREE – USPS Priority</p>
+            <p id="cont">Delivery By Thu, Mar 3</p>
+            <hr color="black">
+            
+            <div id="flex">
+                <h2>Payment Method</h2>
+                <!-- <button onclick="editfunction()" id="btn">Edit</button> -->
+               
+            </div>
+                <div id="card">
+                        <div id="cardp" >
+                             <p>Add new credit or debit card</p>
+                        </div>
+                        <div id="cardimg" >
+                            <img src="https://www.sephora.com/img/ufe/payments/sephora.svg" alt="">
+                            <img src="https://www.sephora.com/img/ufe/payments/visa.svg" alt="">
+                            <img src="https://www.sephora.com/img/ufe/payments/masterCard.svg" alt="">
+                            <img src="https://www.sephora.com/img/ufe/payments/americanExpress.svg" alt="">
+                            <img src="https://www.sephora.com/img/ufe/payments/discover.svg" alt="">
+                            <img src="https://www.sephora.com/img/ufe/payments/JCPenney.svg" alt="">
+                        </div>
+
+                </div>
+                <form>
+                    <input type="text" placeholder="Card number*" id="cardno" class="inputcard"><br>
+                    <input type="text" placeholder="MM*" id="month" class="mm" class="inputcard">
+                    <input type="text" placeholder="YY*" id="year" class="mm" class="inputcard">
+                    <input type="text" placeholder="CVV/CVC"  id="cvc"class="mm" class="inputcard"><br>
+                    <input type="text" id="fname" placeholder="First name*" class="inputcard"> <input type="text" placeholder="Last name*" id="lname" class="inputcard"><br>
+                   
+                
+                    <p id="p" >Billing Address</p>
+                    <p id="add"> </p>
+                    
+                    <input type="submit" id="checkbtn" value="Save & Continue">
+
+                </form>
+            
+            <p id="cont">! Please update your information</p>
+            <hr color="black">
+            <h2>Review & Place Order</h2>
+            <p id="cont">Please review your order information before placing your order.</p>
+            <!-- <p id="otp">Submit Your Otp</p> -->
+           
+
+        </div>
+
+    <div id="right">
+        <div id="price">
+        <p class="rightp">Merchandise Subtotal</p>
+        <p>$</p>
+    </div>
+    <div id="price">
+        <p class="rightp">Shipping & Handling</p>
+        <p>$</p>
+        </div>
+        <div id="price">
+        <p class="rightp">Estimated Tax</p>
+        <p>$</p>
+        </div>
+        <hr color="black">
+        <h2>Estimated Total</h2>
+        <p  class="ofer">or 4 interest-free payments of $36.75Klarna</p>
+        <hr>
+        <!-- <p id="promoview"><a href="">View promo codes ></a> </p>
+        <input type="text" id="reward" placeholder="Promo or Reward Code"> -->
+        <!-- <hr> -->
+        <h2>The Sephora Credit Card Program</h2>
+        <img id="svgimg" src="https://www.sephora.com/contentimages/creditcard/cardicon/CreditCard.svg" alt=""><span>
+        <p class="rightp" id="svgtext">Save $36.75 on this order when you open and use either Sephora Credit Card today*</p></span>
+        <p class="ofer" id="star">*Subject to credit approval. Exclusions apply.</p>
+        <button id="seedtl">SEE DETAILS</button>
+        <hr>
+        <button id="po">Place Order</button>
+        
+    </div>
+    </div>
+    
+    <footer id="footer">
+        <p>© 2022 Sephora USA, Inc.   All rights reserved.  Terms of Use | Privacy Policy</p>
+        <p>1-877-SEPHORA (1-877-737-4672) | TTY (1-888-866-9845) | customerservice@sephora.com</p>
+</footer>
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", myFunction);
+var mydata= JSON.parse(localStorage.getItem("paymentDataBase")) || [];
+function myFunction(event){
+    event.preventDefault();
+   var fname = document.querySelector("#fname").value;
+   var lname = document.querySelector("#lname").value;
+    var cardnum= document.querySelector("#cardno").value;
+    var expmon= document.querySelector("#month").value;
+    var expyr= document.querySelector("#year").value;
+    var cvv= document.querySelector("#cvc").value;
+   
+    var object={
+        username1: fname,
+        username2: lname,
+        cardno: cardnum,
+        cardmonth:expmon ,
+        cardyear:expyr ,
+        cardcvv: cvv,
+        
+    };
+    mydata.push(object);
+    localStorage.setItem("paymentDataBase",JSON.stringify(mydata));
+    // if()
+    alert("Protected Password sent successfully");
+    window.location.href="otp.html";
+
+};
+
+</script>
