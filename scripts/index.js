@@ -1,5 +1,4 @@
 const url = "http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl";
-
 async function getApi(url) {
     try {
         let res = await fetch(url);
@@ -16,6 +15,7 @@ async function getApi(url) {
 getApi(url);
 var container = document.getElementById("container");
 function appendData(data) {
+    console.log(data)
     data.forEach(function (ele) {
         let div = document.createElement("div");
 
@@ -32,4 +32,6 @@ function appendData(data) {
         container.append(div);
 })
 }
+
+
 

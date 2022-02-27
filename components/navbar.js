@@ -205,7 +205,7 @@ function navbar()
                         </div>
 
                         <div class="inpt password"><input required placeholder="" class="input-box" type="password"
-                                id="log-passwordId" minlength="8" maxlength="12">
+                                id="log-passwordId" minlength="6" maxlength="12">
                             <span class="span" for="passwordId">Password**</span>
                         </div>
                         <div class="check">
@@ -263,7 +263,7 @@ function navbar()
                         </div>
 
                         <div class="inptSingup password"><input required placeholder="" class="input-box"
-                                type="password" id="passwordId" minlength="8" maxlength="12">
+                                type="password" id="passwordId" minlength="6" maxlength="12">
                             <span class="span" for="passwordId">Password(6 to 12 character)</span>
                         </div>
 
