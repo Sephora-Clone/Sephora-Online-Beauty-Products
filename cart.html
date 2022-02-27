@@ -176,18 +176,18 @@
         name.innerText = ele.name;
 
         let price = document.createElement("p");
-        name.innerText = ele.price;
+        name.innerText = `${ele.price} $`;
 
         let button = document.createElement("button");
         button.innerText = "Remove";
         button.style.color = "white";
         button.style.backgroundColor = "red";
-
-        var new_price = ele.price.trim().split("");
-        new_price.shift()
-        new_price = new_price.join("")
-        total = total+Number(new_price);
-
+        console.log(ele.price)
+        total+=Number(ele.price)
+        button.addEventListener("click",()=>{
+            items.splice(ele,1)
+            localStorage.setItem("items",JSON.stringify(items));
+        })
         div.append(img, brand, name, price, button);
         document.getElementById("container").append(div);
     })

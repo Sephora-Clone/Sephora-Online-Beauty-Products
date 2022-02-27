@@ -200,12 +200,12 @@ function navbar()
                 </div>
                 <div class="loginForm">
                     <form action="" id="login-form">
-                        <div class="inpt email"><input required placeholder="" class="input-box" type="text"
+                        <div class="inpt email"><input required placeholder="" class="input-box" type="email"
                                 id="log-emailId"><span class="span" for="emaioptiond">Email*</span>
                         </div>
 
-                        <div class="inpt password"><input required placeholder="" class="input-box" type="text"
-                                id="log-passwordId">
+                        <div class="inpt password"><input required placeholder="" class="input-box" type="password"
+                                id="log-passwordId" minlength="8" maxlength="12">
                             <span class="span" for="passwordId">Password**</span>
                         </div>
                         <div class="check">
@@ -258,12 +258,12 @@ function navbar()
                             </div>
                         </div>
 
-                        <div class="inptSingup email"><input required placeholder="" class="input-box" type="text"
+                        <div class="inptSingup email"><input required placeholder="" class="input-box" type="email"
                                 id="emailId"><span class="span" for="emaioptiond">Email</span>
                         </div>
 
                         <div class="inptSingup password"><input required placeholder="" class="input-box"
-                                type="text" id="passwordId">
+                                type="password" id="passwordId" minlength="8" maxlength="12">
                             <span class="span" for="passwordId">Password(6 to 12 character)</span>
                         </div>
 
@@ -303,7 +303,7 @@ function navbar()
                                         <p>jun</p>
                                     </option>
                                     <option>
-                                        <p>jselecty</p>
+                                        <p>july</p>
                                     </option>
                                     <option>
                                         <p>aug</p>
