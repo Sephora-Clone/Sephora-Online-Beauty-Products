@@ -137,10 +137,10 @@ text-decoration: none;
     }
 
     #containerwa{
-        display: grid;
-        grid-template-columns: repeat(4,25%);
-        
-    }
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+}
    
     #container0  img{
         width: 30%;
